@@ -179,17 +179,17 @@ module.exports = {
       serviceCode,
       callbackUrl,
       targetSystem,
-      dlrUrl
+      deliveryReportUrl
     ) => {
       try {
         const response = await madApiV3.post("/messages/sms/subscription", {
           serviceCode,
           callbackUrl,
           targetSystem,
-          dlrUrl,
+          deliveryReportUrl,
         });
         console.log(response.data);
-        return response.data;
+        return { data: response.data };
       } catch (error) {
         console.log(error);
         return { error: error.message };
@@ -209,5 +209,3 @@ module.exports = {
     },
   },
 };
-
-
