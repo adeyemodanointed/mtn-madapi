@@ -1,6 +1,6 @@
 {
   "name": "mtn-madapi",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Implementation of MTN MADAPI for SMS,USSD, etc.",
   "main": "index.js",
   "scripts": {
