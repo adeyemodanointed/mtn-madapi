@@ -5,7 +5,7 @@ const axios = require("axios");
 const { v4 } = require("uuid");
 
 const madApiV3 = axios.create({
-  baseURL: process.env.MADAPI_BASE_URL_V3,
+  baseURL: `${process.env.MADAPI_BASE_URL}/v3`,
   headers: {
     "Content-Type": "application/json",
     "X-API-Key": process.env.MADAPI_CONSUMER_KEY,
@@ -13,7 +13,7 @@ const madApiV3 = axios.create({
 });
 
 const madApiV2 = axios.create({
-  baseURL: process.env.MADAPI_BASE_URL_V2,
+  baseURL: `${process.env.MADAPI_BASE_URL}/v2`,
   headers: {
     "Content-Type": "application/json",
     "X-API-Key": process.env.MADAPI_CONSUMER_KEY,
@@ -21,7 +21,7 @@ const madApiV2 = axios.create({
 });
 
 const madApiV1 = axios.create({
-  baseURL: process.env.MADAPI_BASE_URL_V1,
+  baseURL: `${process.env.MADAPI_BASE_URL}/v1`,
   headers: {
     "Content-Type": "application/json",
     "X-API-Key": process.env.MADAPI_CONSUMER_KEY,
