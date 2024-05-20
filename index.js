@@ -78,6 +78,7 @@ module.exports = {
             subscriptionDescription,
             subscriptionProviderId,
             registrationChannel,
+            "auto-renew": true
           },
           {
             headers: {
